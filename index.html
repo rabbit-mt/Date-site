@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahdi's Date</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Tahoma,sans-serif;
-}
+<title>Mahdi's Date 💜</title>
 
-body{
-background:#090909;
-color:white;
-}
-
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-background:linear-gradient(180deg,#090909,#120020);
-}
-
-h1{
-font-size:48px;
-color:#c77dff;
-text-shadow:0 0 20px #b5179e;
-margin-bottom:15px;
-}
-
-p{
-font-size:18px;
-margin-bottom:30px;
-color:#ddd;
-text-align:center;
-padding:0 20px;
-}
-
-button{
-padding:15px 40px;
-font-size:18px;
-background:#8a2be2;
-border:none;
-border-radius:30px;
-color:white;
-cursor:pointer;
-box-shadow:0 0 20px #8a2be2;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.08);
-box-shadow:0 0 35px #c77dff;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<div class="container">
 
 <h1>💜 Mahdi's Date</h1>
 
 <p>
-سایت رایگان آشنایی و دوستی
+اگر فکر می‌کنی می‌تونیم یک خاطره قشنگ بسازیم،
+درخواستت رو ثبت کن.
 </p>
 
-<button>ثبت نام رایگان</button>
+<div class="form">
 
-</header>
+<input type="text" placeholder="اسمت">
+
+<input type="number" placeholder="چند سالته؟">
+
+<input type="text" placeholder="شهرت">
+
+<input type="text" placeholder="آیدی تلگرام یا اینستاگرام">
+
+<select>
+
+<option>نوع دیت را انتخاب کن</option>
+
+<option>☕ کافه</option>
+
+<option>🌃 رانندگی شب</option>
+
+<option>🍕 رستوران</option>
+
+<option>🎬 سینما</option>
+
+<option>🌳 پیاده‌روی</option>
+
+</select>
+
+<input type="date">
+
+<input type="time">
+
+<textarea rows="4" placeholder="چرا دوست داری باهام بیرون بیای؟"></textarea>
+
+<button onclick="sendForm()">
+ارسال درخواست 💜
+</button>
+
+</div>
+
+<div class="success">
+
+<h2>💜 درخواستت ثبت شد</h2>
+
+<p>
+اگر حس کنم بینمون وایب خوبی وجود داره،
+بهت پیام میدم.
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
